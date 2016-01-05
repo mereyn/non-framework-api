@@ -1,0 +1,48 @@
+<br/>
+<div class="row">
+	<div class="large-9 columns">
+		<div class="row ">
+             <div class="large-9 columns">
+               <h4 class="title">{{title}}</h4> 
+             </div>
+		</div>
+     	<div class="clearfix"></div>
+        <form data-abide method="post"> 
+        	<div class="row ">
+                <div class="large-2 columns">
+                  <label class="inline">Product Name <small>required</small></label>
+                </div>
+                <div class="large-10 columns">
+                  <input type="text" id="product_name" required name="product_name" ng-model="product.product_name" />
+                </div>
+			</div>
+              	
+            <div class="row ">
+                <div class="large-2 columns">
+                  <label class="inline">Product Code <small>required</small></label>
+                </div>
+                <div class="large-10 columns">
+                  <input type="text" required id="product_code" name="product_code" ng-model="product.product_code" />
+                </div>
+            </div>
+            
+            <div class="row ">
+                <div class="large-2 columns">
+                  <label class="inline">Product Price <small>required</small></label>
+                </div>
+                <div class="large-10 columns">
+                  <input type="text" required id="product_price" name="product_price" ng-model="product.product_price" />
+                </div>
+            </div>
+			
+			<div class="row">  
+				<div class="large-9 columns">
+			    	<div class="prefix-radius">
+			    		<a href="#/" class="radius button">BACK TO LIST</a>
+			    		<a ng-click="saveProduct(product)" class="radius button">SAVE</a>
+			      	</div>
+			    </div>
+			</div>
+		</form>
+	</div>
+</div>

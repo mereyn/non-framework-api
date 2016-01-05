@@ -1,0 +1,35 @@
+<h1>PRODUCTS</h1>
+{{message}}
+<div class="row">
+  <div class="small-6 columns">
+    Search <input type="text" ng-model="search" placeholder="Filter"/>
+  </div>
+  <div class="small-6 columns">
+    <a href="#/product/edit/0" class="button">Create New Product</a>
+  </div>
+</div>
+
+<table>
+    <thead>
+		<tr>
+			<th width="70">ID</th>
+			<th width="250">Name</th>
+			<th width="250">Code</th>
+			<th width="250">Price</th>
+			<th >Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="product in products | filter: search | orderBy: product_code">
+			<td>{{product.id}}</td>
+			<td>{{product.product_name}}</td>
+			<td>{{product.product_code}}</td>
+			<td>{{product.product_price}}</td>
+            <td>
+				<a href="#/product/edit/{{product.id}}" class="radius button tiny">EDIT</a>
+				<a ng-click="deleteProduct(product)" class="radius button tiny">DELETE</a>
+            </td>
+		</tr>
+	</tbody>
+</table>
+
