@@ -13,4 +13,4 @@ Changing the site prefix:
 
 Hope to have more time on this and hope you find it useful in any case. :)
 
--- MARY NEZA MELENCION --
+-- M NEZA MELENCION --
